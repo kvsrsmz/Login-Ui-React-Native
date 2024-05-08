@@ -1,9 +1,11 @@
 import React from 'react';
 import { Dimensions, StatusBar, StyleSheet, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
+import { useNavigation } from '@react-navigation/native';
 
-export default function ForgotScreen() {
+export default function VaweScreen() {
   StatusBar.setHidden(true);
+  const navigation = useNavigation();
   return(
     <View style={styles.container}>
       <View style={styles.top}>

@@ -5,8 +5,15 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import LoginScreen from '../screens/LoginScreen';
-import SignUpScreen from '../screens/SignUpScreen';
 import useAuth from '../hooks/useAuth';
+import KayitOlScreen from '../screens/KayitOlScreen';
+import SozlesmeScreen from '../screens/SozlesmeScreen';
+import KullaniciSozScreen from '../screens/KullaniciSozScreen';
+import KVKKScreen from '../screens/KullaniciSozScreen';
+import ForgotScreen from '../screens/ForgotScreen';
+
+
+
 
 const Stack = createNativeStackNavigator();
 
@@ -29,7 +36,11 @@ export default function AppNavigation() {
         <Stack.Navigator initialRouteName='Welcome'>
           <Stack.Screen name="Welcome" options={{headerShown: false}} component={WelcomeScreen} />
           <Stack.Screen name="Login" options={{headerShown: false}} component={LoginScreen} />
-          <Stack.Screen name="SignUp" options={{headerShown: false}} component={SignUpScreen} />
+          <Stack.Screen name="KayitOl" options={{headerShown: false}} component={KayitOlScreen} />
+          <Stack.Screen name="Sozlesme" options={{headerShown: false}} component={SozlesmeScreen} />
+          <Stack.Screen name="KullaniciSoz" options={{headerShown: false}} component={KullaniciSozScreen} />
+          <Stack.Screen name="KVKK" options={{headerShown: false}} component={KVKKScreen} />
+          <Stack.Screen name="Forgot" options={{headerShown: false}} component={ForgotScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     )

@@ -1,3 +1,10 @@
 export const themeColors = {
-   bg: '#0092ff',
+   bg: '#afbf36',
+   
 }   
+export const yesilColors={
+   bg: '#afbf36',
+}
+export const laciColors={
+   bg: '#213a59',
+}
